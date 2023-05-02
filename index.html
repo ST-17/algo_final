@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Algoritms</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+</head>
+<body>
+
+    <div class="all container">
+        <section class="BFS-algo">
+            <div class="BFS">
+                <div class="BFS-wrapper">
+                    <p class="bfs-title" style="margin-bottom: 0px;">BFS search target node</p>
+                    <div class="input">
+                        <br><br>
+                        <label for="from">From</label>
+                        <br>
+                        <select class="bfs-input" name="from" id="from"></select>
+                        <br><br>
+                        <label for="target">To</label>
+                        <br>
+                        <select class="bfs-input" name="target" id="target"></select>
+                        <br>
+                    </div>
+                    <button class="btn" onclick="toBFS()">Search</button>
+                    <div class="result">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section class="ford-algo">
+            <div class="bellmanFord">
+                <div class="ford-wrapper">
+                    <p class="bfs-title">Bellman Ford search shortest path in directed graph</p>
+                    <div class="input">
+                        <label for="edges">Enter edges of graph in order {node} {node} {weight}. <br>Example: <br>Almaty Astana 3<br>Taraz Turkestan 2<br>Astana Turkestan -1<br>Almaty Taraz 1</label>
+                        <br>
+                        <br>
+                        <textarea placeholder="Remember, be strong!" name="edges" id="edges" rows="10" cols="35" class="bfs-area"></textarea>
+                        <br><br>
+                        <label for="source">Source node<br>Example: <br>Almaty</label>
+                        <br>
+                        <input class="bfs-input" name="sourcePoint" id="source">
+                        <br>
+                    </div>
+                    <br>
+                    <button class="btn" style="width: 40%;" onclick="toBellmanFord()">Search shortest path's</button>
+                    <div class="result">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src='app.js'></script>
+    <script src='bellmanFord.js'></script>
+    <script src='bfs.js'></script>
+</body>
+</html>
